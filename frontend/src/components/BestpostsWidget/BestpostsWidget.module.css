@@ -1,0 +1,83 @@
+.bestpostwidgetContainer {
+  width: 330px;
+  height: fit-content;
+  border: 1px solid #e3e5e8;
+  border-radius: 1rem;
+  margin-bottom: 30px;
+  padding: 1.2rem 2rem;
+}
+
+.bestwidgetTopbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* 베스트 게시글 */
+.bestTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bestIcons {
+  margin: 0 0 3px 6px;
+}
+
+.bestrefreshIcon {
+  height: 25px;
+  cursor: pointer;
+  animation: rotate360 5s linear infinite;
+
+  /* border: 1px dotted blue; */
+}
+
+.bestrefreshIcon:hover {
+  animation-play-state: paused;
+  width: 1rem;
+}
+
+/* 회전 애니메이션 정의 */
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 베스트 게시물 제목들 */
+.bestpostsContainer {
+  width: 100%;
+  text-align: start;
+}
+
+.bestpostContents {
+  cursor: pointer;
+  height: 27px;
+  /* bestpostContent 박스 길이 넘어가는 글자들 ... 처리*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bestboardTitles {
+  margin: 0 10px;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bestcontentTitles {
+  color: #111;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bestcontentTitles:hover {
+  font-weight: 550;
+}
